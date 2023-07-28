@@ -1,0 +1,25 @@
+.App {
+  background-color: #282c34;
+  min-height: 92.19vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+ul li{
+  float: left;
+  flex: content;
+  text-decoration: none;
+  list-style: none;
+  padding-inline-end: 10px;
+  padding-right: 15px;
+  color: aliceblue;
+}
+header{
+  background-color: #15a0db;
+  display: flex;
+  font-size: calc(10px + 2vmin);
+  color: rgb(255, 255, 255);
+}
