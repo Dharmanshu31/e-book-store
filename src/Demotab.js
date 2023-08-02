@@ -8,12 +8,13 @@ export const Demotab = () => {
         <div>
             <AppBar position="static">
                 <Tabs value={toggle}
-                onChange={(e,val)=>{setToggle(val)}}>
+                onChange={(e,toggle)=>setToggle(toggle)}>
                     <Tab label="OLD" />
-                    <Tab label="NEW" />
-                    <Tab label="NOT AVAILABLE" />
+                    <Tab label="NEW"/>
+                    <Tab label="NOT AVAILABLE"/>
                 </Tabs>
             </AppBar>
+            <p className="use">{toggle}</p>
         </div>
     );
 }

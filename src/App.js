@@ -6,6 +6,7 @@ import {Array} from './Array'
 import { ThemeProvider, createTheme } from '@material-ui/core';
 import { Cart } from './Cart';
 import { Demotab } from './Demotab';
+import { Login } from './Login';
 
 function App() {
   const theam=createTheme(
@@ -26,7 +27,8 @@ function App() {
     <header>
       <nav className='navigation'>
         <ul>
-          <li><NavLink to="/">Home</NavLink></li>
+        <li><NavLink to="/">Login</NavLink></li>
+          <li><NavLink to="/home">Home</NavLink></li>
           <li><NavLink to="/book">Book</NavLink></li>
           <li><NavLink to="/cart">Cart</NavLink></li>
           <li><NavLink to="/demotab">Tabs</NavLink></li>
@@ -34,7 +36,8 @@ function App() {
       </nav>
     </header>
     <Routes>
-      <Route path="/" element={<User text={{name:"THIS IS E-BOOK STORE",info:"Book is over best friends"}} data={"Enjoy the life with book"}/>}/>
+      <Route path="/" element={<Login/>}/>
+      <Route path="/home" element={<User text={{name:"THIS IS E-BOOK STORE",info:"Book is over best friends"}} data={"Enjoy the life with book"}/>}/>
       <Route path="/book" element={<Array/>}/>
       <Route path="/cart" element={<Cart/>}/>
       <Route path="/demotab" element={<Demotab/>}/>
